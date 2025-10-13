@@ -6,7 +6,36 @@
   <title>K•I•N•G•S Organization — Detroit, MI</title>
   <meta name="description" content="Key Innovators for New Growth in Society (K•I•N•G•S) empowers youth and families through skilled trades, mentorship, and community events at Kings Park in Detroit.">
   <meta name="robots" content="index,follow" />
-   <style>
+   /* Sponsor & Partner Grid Layout */
+#partners {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 40px;
+padding: 40px 20px;
+background-color: #fafafa;
+}
+
+#partners img {
+width: 160px;
+height: auto;
+object-fit: contain;
+border-radius: 8px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#partners img:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+#partners img {
+width: 120px;
+}
+}
+  <style>
     :root { --bg:#ffffff; --panel:#f7fafc; --text:#0b1220; --muted:#4b5563; --border:#e5e7eb;
              --blue:#3b82f6; --yellow:#f2b705; --red:#ef4444; --gray:#6b7280; --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.10);}
     *{ box-sizing:border-box }
