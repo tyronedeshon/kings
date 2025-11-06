@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K•I•N•G•S Organization — Detroit, MI</title>
+  <meta name="description" content="Key Innovators for New Growth in Society (K•I•N•G•S) empowers youth and families through skilled trades, mentorship, and community events at Kings Park in Detroit.">
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root { --bg:#ffffff; --panel:#f7fafc; --text:#0b1220; --muted:#4b5563; --border:#e5e7eb;
+             --blue:#3b82f6; --yellow:#f2b705; --red:#ef4444; --gray:#6b7280; --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.10);}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;}
+    a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+    .container{width:min(1100px,92vw);margin:0 auto}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(6px);
+      border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
+    .brand img{width:44px;height:44px;object-fit:contain}
+    .menu{display:flex;gap:1rem}
+    .menu a{padding:8px 10px;border-radius:10px}
+    .menu a:hover{background:#f3f4f6}
+    @media(max-width:720px){.menu{display:none}}
+    .hero{padding:34px 0 10px;border-bottom:1px solid var(--border)}
+    .brand-bar{height:6px;border-radius:999px;background:linear-gradient(90deg,var(--blue)0 33%,var(--yellow)33% 66%,var(--red)66%);
+      width:220px;margin:10px 0 0 0}
+    .section{padding:46px 0;border-top:1px solid var(--border)}
+    h1{margin:6px 0 0;font-size:clamp(22px,4.6vw,40px)}
+    h2{margin:0 0 12px;font-size:24px}
+    .lede{color:var(--gray)}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .two{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+    @media(max-width:900px){.two{grid-template-columns:1fr}}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    @media(max-width:900px){.grid-3,.grid-4{grid-template-columns:1fr}}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .gallery img{width:100%;height:auto;border-radius:12px;border:1px solid var(--border)}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;border:1px solid var(--border);background:#f8fafc;color:var(--text)}
+    .btn.primary{background:linear-gradient(135deg,var(--yellow),var(--red));color:#111;font-weight:700}
+    footer{padding:26px 0 46px;color:var(--muted);text-align:center;border-top:1px solid var(--border)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img src="assets/kings-logo.png" alt="KINGS crown logo">
+        <span>Key Innovators for New Growth in Society</span>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#classes">Classes</a>
+        <a href="#events">Events</a>
+        <a href="#donate">Donate</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#partners">Partners</a>
+        <a href="#kings-park">Kings Park</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1>Empowering youth through skilled trades, mentorship, and community service</h1>
+        <div class="brand-bar" aria-hidden="true"></div>
+        <p class="lede">A registered 501(c)(3) nonprofit in Detroit, MI.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two">
+        <div>
+          <h2>About Us</h2>
+          <p>K•I•N•G•S equips youth and families with practical trade skills, mentorship, and community-first leadership. Through programs in general maintenance, welding, music production, and violence prevention, we turn curiosity into capability and confidence.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">What We Do</h3>
+          <ul>
+            <li>Hands-on learning in skilled trades</li>
+            <li>Mentorship and career exposure</li>
+            <li>Community events at Kings Park</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section">
+      <div class="container">
+        <h2>Programs & Services</h2>
+        <div class="grid-4">
+          <div class="card"><h3>General Maintenance</h3><p>Safety, tools, drywall repair, TV mounting, home basics.</p></div>
+          <div class="card"><h3>Music Production</h3><p>Beat-making, recording, creative expression.</p></div>
+          <div class="card"><h3>Welding</h3><p>Foundations of safety, tools, and practice.</p></div>
+          <div class="card"><h3>Violence Prevention</h3><p>Conflict resolution, mentorship, positive pathways.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes" class="section">
+      <div class="container">
+        <h2>Classes & Waiting List</h2>
+        <p class="lede">We’re opening new sessions soon. Join the waiting list and we’ll notify you as cohorts launch.</p>
+        <div class="two">
+          <div class="card">
+            <p><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLScbBJn-8U_Mv6KGso-khr4yZygvQuv7i4hZIm8nttceV_CkVg/viewform?usp=header" target="_blank" rel="noopener">Join the Waiting List</a></p>
+            <p class="lede">Add your contact and interests—first come, first served.</p>
+          </div>
+          <div class="card" style="text-align:center">
+            <img src="assets/classes-waitlist-qr.png" alt="Waiting List QR" style="max-width:220px;width:100%;height:auto;border-radius:12px;">
+            <div class="lede" style="margin-top:8px;">Scan to join</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="container">
+        <h2>Upcoming Event</h2>
+        <div class="two">
+          <div class="card">
+            <h3 style="margin-top:0">Food Drive &amp; Giveaway</h3>
+            <p class="lede">Saturday, November 22 • 12–4 PM<br>KINGS Park • 17629 Vaughan, Detroit</p>
+            <p><a class="btn" href="#donate">Chip in for groceries</a></p>
+          </div>
+          <div class="card" style="text-align:center">
+            <img src="assets/food-drive-flyer.png" alt="Food Drive Flyer" style="max-width:100%;height:auto;border-radius:12px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="section">
+      <div class="container">
+        <h2>Donate</h2>
+        <p class="lede">Support youth and community growth—your gift keeps programs free and the park thriving.</p>
+        <div class="grid-3">
+          <div class="card">
+            <h3 style="margin-top:0">Cash App</h3>
+            <p><a class="btn primary" href="https://cash.app/$KingsOrgDetroit" target="_blank" rel="noopener">Donate via Cash App</a></p>
+            <div class="card" style="padding:12px; text-align:center;">
+              <img src="assets/cashapp-qr.png" alt="Cash App QR" style="max-width:220px;width:100%;height:auto;border-radius:12px;">
+              <div class="lede" style="margin-top:8px;">Scan to donate</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">Why Your Gift Matters</h3>
+            <p><em>Every donation fuels workshops, events, and park maintenance for families and youth.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteer" class="section">
+      <div class="container">
+        <h2>Volunteer</h2>
+        <p class="lede">Pitch in at Kings Park events, workshops, and cleanups.</p>
+        <div class="two">
+          <div class="card">
+            <p><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSedIjx2Ar4Kp7nsxUAmOiT6UVDfIFeJfdGcei3TwsPKw6pJuQ/viewform?usp=header" target="_blank" rel="noopener">Volunteer Sign-Up (Google Form)</a></p>
+            <p class="lede">Prefer mobile? Scan the QR on the final build.</p>
+          </div>
+          <div class="card" style="text-align:center">
+            <img src="assets/volunteer-qr.png" alt="Volunteer QR" style="max-width:220px;width:100%;height:auto;border-radius:12px;">
+            <div class="lede" style="margin-top:8px;">Scan to sign up</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Community Impact</h2>
+        <div class="gallery">
+          <img src="assets/gallery/back-to-school.jpg" alt="Back to School">
+          <img src="assets/gallery/movie-night.jpg" alt="Movie Night">
+          <img src="assets/gallery/block-club.jpg" alt="Community Block Club meeting">
+          <img src="assets/gallery/trunk-or-treat.jpg" alt="Trunk or Treat">
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ UPDATED PARTNERS SECTION -->
+    <section id="partners" class="section">
+      <div class="container">
+        <h2>Partners &amp; Sponsors</h2>
+        <div class="partner-grid" 
+             style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;align-items:center;justify-items:center;">
+          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
+            <img src="assets/partners/goc-logo.png" alt="G.O.C Organization logo" style="max-width:90px;width:100%;height:auto;">
+          </div>
+          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
+            <img src="assets/partners/mommy-needs-help.png" alt="Mommy Needs Help logo" style="max-width:90px;width:100%;height:auto;">
+          </div>
+          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
+            <img src="assets/partners/ne-thingz-possible.jpeg" alt="NE Thingz Possible logo" style="max-width:90px;width:100%;height:auto;">
+          </div>
+          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
+            <img src="assets/partners/family-through-loyalty.jpeg" alt="Family Through Loyalty S/C logo" style="max-width:90px;width:100%;height:auto;">
+          </div>
+          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
+            <img src="assets/partners/garden-of-eve.jpeg" alt="Garden of Eve Learning Circle logo" style="max-width:90px;width:100%;height:auto;">
+          </div>
+          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
+            <img src="assets/partners/guess-tax-pro.jpeg" alt="Guess Tax Pro logo" style="max-width:90px;width:100%;height:auto;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kings-park" class="section">
+      <div class="container two">
+        <div>
+          <h2>Kings Park</h2>
+          <p class="lede">Our community hub for events, cleanups, and youth programming in Detroit.</p>
+          <p><a class="btn" href="https://maps.app.goo.gl/mpB7oTrc6E2jdrkw8?g_st=ipc" target="_blank" rel="noopener">View in Google Maps</a></p>
+        </div>
+        <div class="card" style="padding:0;">
+          <iframe title="Kings Park Map" src="https://www.google.com/maps?q=17629+Vaughan,+Detroit,+MI&output=embed"
+            width="100%" height="360" style="border:0; border-radius:14px;" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container two">
+        <div>
+          <h2>Contact</h2>
+          <p><strong>Email:</strong> <a href="mailto:Tyrone@kingsorganization313.org">Tyrone@kingsorganization313.org</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+13137386802">(313) 738-6802</a></p>
+          <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1CiUUguuS2/?mibextid=wwXIfr" target="_blank" rel="noopener">Follow us on Facebook</a></p>
+          <p><strong>Location:</strong> Detroit, MI</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">501(c)(3)</h3>
+          <p>We are a recognized 501(c)(3) nonprofit. Donations may be tax-deductible as allowed by law.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container"><p>© <span id="year"></span> Key Innovators for New Growth in Society</p></div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
