@@ -1,253 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>K•I•N•G•S Organization — Detroit, MI</title>
-  <meta name="description" content="Key Innovators for New Growth in Society (K•I•N•G•S) empowers youth and families through skilled trades, mentorship, and community events at Kings Park in Detroit.">
-  <meta name="robots" content="index,follow" />
-  <style>
-    :root { --bg:#ffffff; --panel:#f7fafc; --text:#0b1220; --muted:#4b5563; --border:#e5e7eb;
-             --blue:#3b82f6; --yellow:#f2b705; --red:#ef4444; --gray:#6b7280; --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.10);}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;}
-    a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
-    .container{width:min(1100px,92vw);margin:0 auto}
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(6px);
-      border-bottom:1px solid var(--border)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
-    .brand img{width:44px;height:44px;object-fit:contain}
-    .menu{display:flex;gap:1rem}
-    .menu a{padding:8px 10px;border-radius:10px}
-    .menu a:hover{background:#f3f4f6}
-    @media(max-width:720px){.menu{display:none}}
-    .hero{padding:34px 0 10px;border-bottom:1px solid var(--border)}
-    .brand-bar{height:6px;border-radius:999px;background:linear-gradient(90deg,var(--blue)0 33%,var(--yellow)33% 66%,var(--red)66%);
-      width:220px;margin:10px 0 0 0}
-    .section{padding:46px 0;border-top:1px solid var(--border)}
-    h1{margin:6px 0 0;font-size:clamp(22px,4.6vw,40px)}
-    h2{margin:0 0 12px;font-size:24px}
-    .lede{color:var(--gray)}
-    .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-    .two{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
-    @media(max-width:900px){.two{grid-template-columns:1fr}}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    @media(max-width:900px){.grid-3,.grid-4{grid-template-columns:1fr}}
-    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-    .gallery img{width:100%;height:auto;border-radius:12px;border:1px solid var(--border)}
-    .btn{display:inline-block;padding:12px 16px;border-radius:12px;border:1px solid var(--border);background:#f8fafc;color:var(--text)}
-    .btn.primary{background:linear-gradient(135deg,var(--yellow),var(--red));color:#111;font-weight:700}
-    footer{padding:26px 0 46px;color:var(--muted);text-align:center;border-top:1px solid var(--border)}
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>K.I.N.G.S Organization — Key Innovators for New Growth in Society</title>
+<meta name="description" content="K.I.N.G.S Organization — community programs, donate, volunteer, vehicle donations via CARS (Careasy)" />
+<style>
+/* ========== Simple clean styles ========== */
+:root{
+--brand:#0b5d6b;
+--accent:#f6a623;
+--bg:#ffffff;
+--muted:#666666;
+--card:#fbfbfb;
+--radius:12px;
+font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#111;line-height:1.45;-webkit-font-smoothing:antialiased}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:40}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.brand .logo{width:52px;height:52px;border-radius:10px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:800;font-size:12px}
+.brand .title{font-weight:800;color:var(--brand)}
+nav{display:flex;gap:12px;align-items:center}
+nav a{color:var(--brand);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:700}
+nav a.active{background:var(--brand);color:#fff}
+main{padding:28px 0}
+section.page{display:none}
+section.page.active{display:block}
+.hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap;background:linear-gradient(180deg, #fff 0%, #fbfbfb 100%);padding:22px;border-radius:12px;box-shadow:0 10px 30px rgba(12,18,24,0.04)}
+.hero .left{flex:1;min-width:260px}
+h1{margin:0 0 8px;font-size:28px;color:var(--brand)}
+p.lead{margin:0 0 14px;color:var(--muted)}
+.cta{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:10px;background:var(--brand);color:#fff;text-decoration:none;font-weight:800}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+.card{background:#fff;border-radius:12px;padding:14px;border:1px solid #f0f0f0}
+.muted{color:var(--muted)}
+.small{font-size:13px;color:var(--muted)}
+footer{margin-top:28px;padding:18px 0;border-top:1px solid #eee;color:var(--muted);font-size:13px}
+.cars-block{display:flex;gap:12px;align-items:center;border-radius:10px;padding:12px;background:#f4f9fa}
+.cars-logo{height:52px;width:auto;display:block}
+/* simple responsive */
+@media(max-width:900px){
+.grid{grid-template-columns:1fr}
+nav{gap:6px}
+}
+@media(max-width:640px){
+h1{font-size:22px}
+.brand .title{display:none}
+}
+</style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="#top">
-        <img src="assets/kings-logo.png" alt="KINGS crown logo">
-        <span>Key Innovators for New Growth in Society</span>
-      </a>
-      <nav class="menu" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#programs">Programs</a>
-        <a href="#classes">Classes</a>
-        <a href="#events">Events</a>
-        <a href="#donate">Donate</a>
-        <a href="#volunteer">Volunteer</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#partners">Partners</a>
-        <a href="#kings-park">Kings Park</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header>
+<div class="wrap topbar">
+<div class="brand" aria-hidden="false">
+<div class="logo">K•I•N•G•S</div>
+<div>
+<div class="title">K.I.N.G.S Organization</div>
+<div class="small">Key Innovators for New Growth in Society.</div>
+</div>
+</div>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container">
-        <h1>Empowering youth through skilled trades, mentorship, and community service</h1>
-        <div class="brand-bar" aria-hidden="true"></div>
-        <p class="lede">A registered 501(c)(3) nonprofit in Detroit, MI.</p>
-      </div>
-    </section>
+<nav aria-label="Primary navigation" id="primary-nav">
+<a href="#home" data-target="home" class="navlink">Home</a>
+<a href="#donate" data-target="donate" class="navlink">Donate</a>
+<a href="#donate-vehicle" data-target="donate-vehicle" class="navlink">Donate Vehicle</a>
+<a href="#about" data-target="about" class="navlink">About</a>
+<a href="#contact" data-target="contact" class="navlink">Contact</a>
+</nav>
+</div>
+</header>
 
-    <section id="about" class="section">
-      <div class="container two">
-        <div>
-          <h2>About Us</h2>
-          <p>K•I•N•G•S equips youth and families with practical trade skills, mentorship, and community-first leadership. Through programs in general maintenance, welding, music production, and violence prevention, we turn curiosity into capability and confidence.</p>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">What We Do</h3>
-          <ul>
-            <li>Hands-on learning in skilled trades</li>
-            <li>Mentorship and career exposure</li>
-            <li>Community events at Kings Park</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<main class="wrap" id="app">
+<!-- ========= HOME ========= -->
+<section id="home" class="page active" aria-labelledby="home-heading">
+<div class="hero card" role="region" aria-labelledby="home-heading">
+<div class="left">
+<h1 id="home-heading">Welcome to K.I.N.G.S Organization</h1>
+<p class="lead">We deliver free community events, teach practical trades, and open pathways to economic opportunity for Detroit youth and families.</p>
 
-    <section id="programs" class="section">
-      <div class="container">
-        <h2>Programs & Services</h2>
-        <div class="grid-4">
-          <div class="card"><h3>General Maintenance</h3><p>Safety, tools, drywall repair, TV mounting, home basics.</p></div>
-          <div class="card"><h3>Music Production</h3><p>Beat-making, recording, creative expression.</p></div>
-          <div class="card"><h3>Welding</h3><p>Foundations of safety, tools, and practice.</p></div>
-          <div class="card"><h3>Violence Prevention</h3><p>Conflict resolution, mentorship, positive pathways.</p></div>
-        </div>
-      </div>
-    </section>
+<a class="cta" href="#donate" data-target="donate">Support Our Work</a>
+<div style="margin-top:12px" class="small muted">Or donate a vehicle to support programs — fast pickup and tax receipt through our partner CARS.</div>
+</div>
 
-    <section id="classes" class="section">
-      <div class="container">
-        <h2>Classes & Waiting List</h2>
-        <p class="lede">We’re opening new sessions soon. Join the waiting list and we’ll notify you as cohorts launch.</p>
-        <div class="two">
-          <div class="card">
-            <p><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLScbBJn-8U_Mv6KGso-khr4yZygvQuv7i4hZIm8nttceV_CkVg/viewform?usp=header" target="_blank" rel="noopener">Join the Waiting List</a></p>
-            <p class="lede">Add your contact and interests—first come, first served.</p>
-          </div>
-          <div class="card" style="text-align:center">
-            <img src="assets/classes-waitlist-qr.png" alt="Waiting List QR" style="max-width:220px;width:100%;height:auto;border-radius:12px;">
-            <div class="lede" style="margin-top:8px;">Scan to join</div>
-          </div>
-        </div>
-      </div>
-    </section>
+<div style="min-width:220px;align-self:start">
+<div class="card small muted">
+<strong>Next event</strong>
+<div style="margin-top:8px">Back-to-School Community Day — Free haircuts, bounce house, food, and skill demos.</div>
+<div style="margin-top:8px"><strong>Date:</strong> Aug 22 • <strong>Time:</strong> 1–6 PM</div>
+</div>
+</div>
+</div>
+</section>
 
-    <section id="events" class="section">
-      <div class="container">
-        <h2>Upcoming Event</h2>
-        <div class="two">
-          <div class="card">
-            <h3 style="margin-top:0">Food Drive &amp; Giveaway</h3>
-            <p class="lede">Saturday, November 22 • 12–4 PM<br>KINGS Park • 17629 Vaughan, Detroit</p>
-            <p><a class="btn" href="#donate">Chip in for groceries</a></p>
-          </div>
-          <div class="card" style="text-align:center">
-            <img src="assets/food-drive-flyer.png" alt="Food Drive Flyer" style="max-width:100%;height:auto;border-radius:12px;">
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- ========= DONATE (general) ========= -->
+<section id="donate" class="page" aria-labelledby="donate-heading">
+<h2 id="donate-heading">Donate to K.I.N.G.S</h2>
+<div class="grid" style="margin-top:10px">
+<div>
+<div class="card">
+<p class="muted">Your support helps fund youth programs, tool libraries, and free community services. Choose a way to give below.</p>
 
-    <section id="donate" class="section">
-      <div class="container">
-        <h2>Donate</h2>
-        <p class="lede">Support youth and community growth—your gift keeps programs free and the park thriving.</p>
-        <div class="grid-3">
-          <div class="card">
-            <h3 style="margin-top:0">Cash App</h3>
-            <p><a class="btn primary" href="https://cash.app/$KingsOrgDetroit" target="_blank" rel="noopener">Donate via Cash App</a></p>
-            <div class="card" style="padding:12px; text-align:center;">
-              <img src="assets/cashapp-qr.png" alt="Cash App QR" style="max-width:220px;width:100%;height:auto;border-radius:12px;">
-              <div class="lede" style="margin-top:8px;">Scan to donate</div>
-            </div>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">Why Your Gift Matters</h3>
-            <p><em>Every donation fuels workshops, events, and park maintenance for families and youth.</em></p>
-          </div>
-        </div>
-      </div>
-    </section>
+<h3 style="margin-top:14px">Give Online</h3>
+<p class="small muted">Use our secure donation processor (link opens in new tab).</p>
+<p><a class="cta" href="https://example.org/donate" target="_blank" rel="noopener noreferrer">Donate Online</a></p>
 
-    <section id="volunteer" class="section">
-      <div class="container">
-        <h2>Volunteer</h2>
-        <p class="lede">Pitch in at Kings Park events, workshops, and cleanups.</p>
-        <div class="two">
-          <div class="card">
-            <p><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSedIjx2Ar4Kp7nsxUAmOiT6UVDfIFeJfdGcei3TwsPKw6pJuQ/viewform?usp=header" target="_blank" rel="noopener">Volunteer Sign-Up (Google Form)</a></p>
-            <p class="lede">Prefer mobile? Scan the QR on the final build.</p>
-          </div>
-          <div class="card" style="text-align:center">
-            <img src="assets/volunteer-qr.png" alt="Volunteer QR" style="max-width:220px;width:100%;height:auto;border-radius:12px;">
-            <div class="lede" style="margin-top:8px;">Scan to sign up</div>
-          </div>
-        </div>
-      </div>
-    </section>
+<h3 style="margin-top:12px">Donate a Vehicle</h3>
+<p class="small muted">We partnered with CARS (Careasy) to accept vehicle donations — fast pickup and paperwork handled for you.</p>
+<p>
+<a class="cta" id="cars-cta" href="https://careasy.org/key-innovators-for-new-growth-in-society?ref=KINGS"
+target="_blank" rel="noopener noreferrer">Donate a Vehicle →</a>
+</p>
 
-    <section id="gallery" class="section">
-      <div class="container">
-        <h2>Community Impact</h2>
-        <div class="gallery">
-          <img src="assets/gallery/back-to-school.jpg" alt="Back to School">
-          <img src="assets/gallery/movie-night.jpg" alt="Movie Night">
-          <img src="assets/gallery/block-club.jpg" alt="Community Block Club meeting">
-          <img src="assets/gallery/trunk-or-treat.jpg" alt="Trunk or Treat">
-        </div>
-      </div>
-    </section>
+<h3 style="margin-top:12px">Other Ways to Help</h3>
+<ul class="muted">
+<li>Volunteer at events</li>
+<li>Donate tools or event supplies</li>
+<li>Sponsor a youth scholarship</li>
+</ul>
+</div>
 
-    <!-- ✅ UPDATED PARTNERS SECTION -->
-    <section id="partners" class="section">
-      <div class="container">
-        <h2>Partners &amp; Sponsors</h2>
-        <div class="partner-grid" 
-             style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;align-items:center;justify-items:center;">
-          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
-            <img src="assets/partners/goc-logo.png" alt="G.O.C Organization logo" style="max-width:90px;width:100%;height:auto;">
-          </div>
-          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
-            <img src="assets/partners/mommy-needs-help.png" alt="Mommy Needs Help logo" style="max-width:90px;width:100%;height:auto;">
-          </div>
-          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
-            <img src="assets/partners/ne-thingz-possible.jpeg" alt="NE Thingz Possible logo" style="max-width:90px;width:100%;height:auto;">
-          </div>
-          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
-            <img src="assets/partners/family-through-loyalty.jpeg" alt="Family Through Loyalty S/C logo" style="max-width:90px;width:100%;height:auto;">
-          </div>
-          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
-            <img src="assets/partners/garden-of-eve.jpeg" alt="Garden of Eve Learning Circle logo" style="max-width:90px;width:100%;height:auto;">
-          </div>
-          <div class="logo-card" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:8px;display:flex;align-items:center;justify-content:center;">
-            <img src="assets/partners/guess-tax-pro.jpeg" alt="Guess Tax Pro logo" style="max-width:90px;width:100%;height:auto;">
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="card" style="margin-top:12px">
+<h4>Tax & Pickup</h4>
+<p class="small muted">CARS handles title transfer, pickup scheduling, and provides a tax receipt when applicable. Additions: if you need assistance contacting CARS, email <a href="mailto:info@kingsorg.org">info@kingsorg.org</a>.</p>
+</div>
+</div>
 
-    <section id="kings-park" class="section">
-      <div class="container two">
-        <div>
-          <h2>Kings Park</h2>
-          <p class="lede">Our community hub for events, cleanups, and youth programming in Detroit.</p>
-          <p><a class="btn" href="https://maps.app.goo.gl/mpB7oTrc6E2jdrkw8?g_st=ipc" target="_blank" rel="noopener">View in Google Maps</a></p>
-        </div>
-        <div class="card" style="padding:0;">
-          <iframe title="Kings Park Map" src="https://www.google.com/maps?q=17629+Vaughan,+Detroit,+MI&output=embed"
-            width="100%" height="360" style="border:0; border-radius:14px;" loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
+<aside>
+<div class="cars-block">
+<!-- Embedded CARS logo (base64) -->
+<img class="cars-logo" alt="CARS (Careasy) logo"
+src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQEBIQEBAQDw8PDQ8PDw8PDw8QFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGzclHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALABHwMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAFBgMEAAIBB//EADoQAAEDAgQDBgQFBQkAAAAAAAECAwQFERIhMQYTMkFRYXGBkaGxQlKxwdEUUmJy8SNSYnKCorLC4f/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACMRAAICAgIDAQADAQAAAAAAAAABAhEDIRIxBBNBUWEUInH/2gAMAwEAAhEDEQA/APsQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4Y5R1PWi4xk5n1bSyb5tW5yGqk1yPqI2y8W2N6Pq1u9N1O0m1rzXbVt4XUq9qKQp6s6nTfN1v8Arh9v5Y2rNHqz1itd5qJr1rK5vVb2q1Z0lN0k1q1pK4o1b3a9x7r3h3mW8rK9G7e9+2v7b5y2rlm9m6mWmpyq9o9J3zV7n9QW2q9qv9l3q0b7q2m7q7q2m7q7q2m7q7q2m7q7q2m7q7q2m/9k=">
+<div style="font-size:14px">
+<strong>Partner</strong><br>
+CARS (Careasy)
+<div class="small muted" style="margin-top:6px">Secure vehicle donations with pickup and tax receipt.</div>
+</div>
+</div>
+</aside>
+</div>
+</section>
 
-    <section id="contact" class="section">
-      <div class="container two">
-        <div>
-          <h2>Contact</h2>
-          <p><strong>Email:</strong> <a href="mailto:Tyrone@kingsorganization313.org">Tyrone@kingsorganization313.org</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+13137386802">(313) 738-6802</a></p>
-          <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1CiUUguuS2/?mibextid=wwXIfr" target="_blank" rel="noopener">Follow us on Facebook</a></p>
-          <p><strong>Location:</strong> Detroit, MI</p>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0">501(c)(3)</h3>
-          <p>We are a recognized 501(c)(3) nonprofit. Donations may be tax-deductible as allowed by law.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+<!-- ========= DONATE VEHICLE (expanded page) ========= -->
+<section id="donate-vehicle" class="page" aria-labelledby="dv-heading">
+<h2 id="dv-heading">Donate a Vehicle — CARS (Careasy)</h2>
+<div class="grid" style="margin-top:8px">
+<div>
+<div class="card">
+<p class="muted">Thank you for supporting K.I.N.G.S by donating a vehicle. CARS (Careasy) handles pickup, paperwork, and title transfer. Follow the steps below to complete your donation.</p>
 
-  <footer>
-    <div class="container"><p>© <span id="year"></span> Key Innovators for New Growth in Society</p></div>
-  </footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<h3 style="margin-top:12px">How to donate (quick)</h3>
+<ol class="muted">
+<li>Click the big Donate button below (opens Careasy/CARS page in a new tab).</li>
+<li>Complete the online donation form and choose K.I.N.G.S as the beneficiary.</li>
+<li>Schedule the pickup time — CARS coordinates with you.</li>
+<li>Receive a tax receipt via email (if eligible).</li>
+</ol>
+
+<p style="margin-top:12px">
+<!-- final CARS link with ref param for tracking -->
+<a id="donate-cars-button" class="cta" href="https://careasy.org/key-innovators-for-new-growth-in-society?ref=KINGS" target="_blank" rel="noopener noreferrer">Donate Your Vehicle Now</a>
+</p>
+
+<div style="margin-top:14px" class="muted">
+<strong>Need help?</strong> Contact us at <a href="mailto:info@kingsorg.org">info@kingsorg.org</a> and we'll assist you through the process.
+</div>
+</div>
+
+<div class="card" style="margin-top:12px">
+<h4>What CARS handles</h4>
+<ul class="muted">
+<li>Title and paperwork</li>
+<li>Pickup scheduling and transport</li>
+<li>Issuing tax receipts when applicable</li>
+</ul>
+</div>
+</div>
+
+<aside>
+<div class="card small muted">
+<strong>Why donate a vehicle?</strong>
+<p class="small muted" style="margin-top:8px">Vehicles are one of the highest-impact gifts — they can be sold to fund programs, provide equipment, or cover transport costs for our initiatives.</p>
+</div>
+</aside>
+</div>
+</section>
+
+<!-- ========= ABOUT ========= -->
+<section id="about" class="page" aria-labelledby="about-heading">
+<h2 id="about-heading">About K.I.N.G.S Organization</h2>
+<div class="card" style="margin-top:10px">
+<p class="muted">K.I.N.G.S — Key Innovators for New Growth in Society — is a nonprofit focused on youth empowerment, hands-on trade skills, and community events that increase opportunity and connection in Detroit neighborhoods.</p>
+<p style="margin-top:8px" class="muted">We provide affordable handyman and automotive services, host free events, and run educational programs to build generational wealth and life skills.</p>
+</div>
+</section>
+
+<!-- ========= CONTACT ========= -->
+<section id="contact" class="page" aria-labelledby="contact-heading">
+<h2 id="contact-heading">Contact</h2>
+<div class="grid" style="margin-top:10px">
+<div>
+<div class="card">
+<p class="small muted"><strong>Mailing Address</strong><br>17644 Heyden St, Detroit, MI 48219</p>
+<p class="small muted"><strong>Email</strong><br><a href="mailto:info@kingsorg.org">info@kingsorg.org</a></p>
+<p class="small muted"><strong>Phone</strong><br>(###) ###-####</p>
+</div>
+
+<div class="card" style="margin-top:12px">
+<h4>Volunteer or partner</h4>
+<p class="small muted">Email us at <a href="mailto:info@kingsorg.org">info@kingsorg.org</a> with “Volunteer” or “Partnership” in the subject and we'll respond with next steps.</p>
+</div>
+</div>
+
+<aside>
+<div class="card small muted">
+<strong>Follow</strong>
+<p class="small muted" style="margin-top:8px">Find us on social media (links not included here). Want them added? Send handles and I'll add icons and links.</p>
+</div>
+</aside>
+</div>
+</section>
+
+<footer class="wrap">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+<div>© <span id="year"></span> K.I.N.G.S Organization</div>
+<div class="small muted">Key Innovators for New Growth in Society.</div>
+</div>
+</footer>
+</main>
+
+<script>
+/***** Small client-side router for hash nav (works with GitHub Pages) *****/
+(function(){
+const links = document.querySelectorAll('.navlink');
+const pages = document.querySelectorAll('.page');
+function showPage(id) {
+pages.forEach(p=>p.classList.toggle('active', p.id===id));
+links.forEach(a=>{
+a.classList.toggle('active', a.dataset.target===id);
+});
+// scroll to top of main content when switching
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// initial: look at location.hash or default to home
+function route() {
+const hash = location.hash.replace('#','') || 'home';
+// allow unknown hashes to fallback
+const target = document.getElementById(hash) ? hash : 'home';
+showPage(target);
+}
+
+window.addEventListener('hashchange', route, false);
+
+// attach nav links to update hash
+document.querySelectorAll('nav a').forEach(a=>{
+a.addEventListener('click', function(e){
+// let the hashchange router handle it
+// ensure the link's href is the hash
+// (existing links already use #page)
+});
+});
+
+// run on load
+route();
+
+// set year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
 </body>
 </html>
